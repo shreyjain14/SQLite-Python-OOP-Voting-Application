@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title> Password Generator </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <form action="{{ url_for('read_form')}}" method="post">
+        <input type="text" name="name" placeholder="ENTER YOUR NAME" required>
+        <br><br>
+        <input type="radio" name="car" value="FRONX" required>
+        <label>FRONX</label>
+        <br>
+        <input type="radio" name="car" value="GRAND VITARA">
+        <label>GRAND VITARA</label>
+        <br>
+        <input type="radio" name="car" value="ERTIGA">
+        <label>ERTIGA</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
